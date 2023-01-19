@@ -1,0 +1,21 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <div>
+            Name: <span id="insertName"></span></br>
+            Age: <span id="insertAge"></span></br>
+            Salary: <span id="insertSalary"></span></br>   
+            
+
+        </div>
+        <script>
+            
+            document.getElementById('insertName').innerHTML=localStorage.getItem('name');
+            document.getElementById('insertAge').innerHTML=localStorage.getItem('age');
+            document.getElementById('insertSalary').innerHTML=localStorage.getItem('salary');
+            
+        </script>
+    </body>
+</html>

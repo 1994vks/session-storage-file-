@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <script>
+            function Register(){
+                localStorage.setItem('name',document.getElementById('name').value);
+                localStorage.setItem('age',document.getElementById('Age').value);
+                localStorage.setItem('salary',document.getElementById('Salary').value);
+               
+                //console.log(localStorage.getItem(name))
+                window.open('sumit from1.html')
+            }
+        </script>
+    </head>
+    <body>
+        <div>
+        <form >
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" value=""><br>
+            
+            <label for="Age">Age:</label><br>
+            <input type="number" id="Age" name="Age" value=""><br>
+          
+             <label for="name">Telephone:</label><br>
+            <input type="number" id="Telephone" name="name" value=""><br>
+          
+             <label for="name">Email:</label><br>
+            <input type="email" id="Email" name="name" value="" ><br>
+
+            <label for="name">Salary:</label><br>
+            <input type="number" id="Salary" name="name" value=""><br>
+
+            <label for="name">Joining Date:</label><br>
+            <input type="date" id="Joining Date" name="name" value=""><br>
+          
+            <input type="button" value="Register" onclick="Register()">
+          </form>
+        </div> 
+    </body>
+</html>
